@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/749b88acba.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
 
     <!-- Navigation Bar -->
 <nav class="navbar">
@@ -101,6 +102,22 @@
     <footer id="footer" class="text-center">
         <p>© 2025 TaskSphere. All rights reserved.</p>
     </footer>
+
+    <!-- Add this just before the closing </body> tag -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, setting up menu toggle');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbarMenu = document.querySelector('.navbar ul');
+    
+    menuToggle.addEventListener('click', function() {
+        console.log('Menu clicked');
+        menuToggle.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+    });
+});
+</script>
+
 
     <!-- JavaScript Files -->
     <script src="/js/main.js"></script>

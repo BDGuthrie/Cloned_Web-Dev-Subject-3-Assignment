@@ -513,8 +513,8 @@ footer p, .footer p {
   }
   
   .navbar ul.active {
-    display: flex;
-  }
+    display: flex !important;
+}
   
   .navbar ul li {
     width: 100%;
@@ -602,7 +602,7 @@ footer p, .footer p {
 
 /* JavaScript support for mobile menu toggle */
 @media screen {
-  .navbar ul.show {
+  .navbar ul.active {
     display: flex;
   }
 }

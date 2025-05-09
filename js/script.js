@@ -381,10 +381,17 @@ form.addEventListener('submit', async (e) => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navbarLinks = document.querySelector('.navbar ul');
-  
-  menuToggle.addEventListener('click', function() {
-    navbarLinks.classList.toggle('active');
-  });
+    console.log('DOM loaded, setting up menu toggle');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbarMenu = document.querySelector('.navbar ul');
+    
+    menuToggle.addEventListener('click', function() {
+        console.log('Menu clicked');
+        console.log('Current classes on menuToggle:', menuToggle.classList);
+        console.log('Current classes on navbarMenu:', navbarMenu.classList);
+        menuToggle.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+        console.log('After toggle - classes on menuToggle:', menuToggle.classList);
+        console.log('After toggle - classes on navbarMenu:', navbarMenu.classList);
+    });
 });
