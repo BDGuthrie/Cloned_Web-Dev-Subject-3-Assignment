@@ -327,13 +327,13 @@ h1, h2, h3 {
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  color: #24324d;
+  color: #4A90E2;
   margin-bottom: 1.5rem;
   text-align: left;
 }
 
 h2 {
-  color: #1F2A35;
+  color: #4A90E2;
   margin-top: 2rem;
   margin-bottom: 0.7rem;
   font-size: 1.12rem;
@@ -579,6 +579,7 @@ footer p, .footer p {
   
   h2 {
     font-size: 1.3rem;
+    color:#4A90E2
   }
   
   .form-wrapper {
@@ -622,12 +623,12 @@ footer p, .footer p {
 .page-header {
     width: 100%;
     margin-bottom: 2rem;
-    text-align: center;
+
 }
 
 .page-header h2 {
     font-size: 2rem;
-    color: #333;
+    color:#4A90E2;
     margin-bottom: 0.5rem;
 }
 
